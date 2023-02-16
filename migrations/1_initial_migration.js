@@ -1,5 +1,5 @@
-var myContract = artifacts.require("MyContract.sol");
+var MyContract = artifacts.require("MyContract");
 
 module.exports = function(deployer) {
-  deployer.deploy(myContract);
+  deployer.deploy(MyContract);
 };

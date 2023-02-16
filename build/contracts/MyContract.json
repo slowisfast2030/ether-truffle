@@ -874,12 +874,13 @@
         }
       },
       "links": {},
-      "address": "0xDE390AfdEd5d55C80dB8f89A70cd51bA0e115CbA",
-      "transactionHash": "0x54ee671eb33ae2f56012020105d7fd6f8dce1094aa08bdd2224de1bacc0fd0b7"
+      "address": "0x04A1E2503c96FB7FF6b95F63892da15ea57A2e27",
+      "transactionHash": "0xa6fcea980377b16fc2939946c06cdb7a70617451c5c89b05d96bd9849808a8a4"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-16T14:47:42.129Z",
+  "updatedAt": "2023-02-16T14:50:51.589Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
