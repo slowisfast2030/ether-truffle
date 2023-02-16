@@ -1510,14 +1510,28 @@
   },
   "networks": {
     "5777": {
-      "events": {},
+      "events": {
+        "0xb8a00d6d8ca1be30bfec34d8f97e55f0f0fd9eeb7fb46e030516363d4cfe1ad6": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "addr",
+              "type": "address"
+            }
+          ],
+          "name": "Log",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0xfdF5A27174f8bD7B0F1B7A20ba5946f6cf2DE66d",
-      "transactionHash": "0x4cf697fe0270cc1bde69065f4815d8d249d6f00200468eea1db8e3e656dfb5c4"
+      "address": "0xDE390AfdEd5d55C80dB8f89A70cd51bA0e115CbA",
+      "transactionHash": "0x54ee671eb33ae2f56012020105d7fd6f8dce1094aa08bdd2224de1bacc0fd0b7"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-16T10:31:41.856Z",
+  "updatedAt": "2023-02-16T10:41:51.561Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
