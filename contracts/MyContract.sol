@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.13;
+pragma solidity ^0.5.13;
 
 contract MyContract {
   event Log(address indexed addr);
 
-  constructor() {
+  constructor() public{
     emit Log(address(this));
   }
 
