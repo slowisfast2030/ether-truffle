@@ -8,7 +8,6 @@ contract MyContract {
   event Log2(address addr);
   event Log3(address addr, uint a, uint b, uint c);
 
-
   constructor() public{
     emit Log1(address(this));
     emit Log2(address(this));
