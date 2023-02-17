@@ -57,7 +57,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 17,
-        "sourceUnit": 115,
+        "sourceUnit": 97,
         "src": "59:44:0",
         "symbolAliases": [
           {
@@ -70,7 +70,7 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          114
+          96
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -92,7 +92,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_MyContract_$114",
+              "typeIdentifier": "t_contract$_MyContract_$96",
               "typeString": "contract MyContract"
             },
             "typeName": {
@@ -100,10 +100,10 @@
               "id": 4,
               "name": "MyContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 114,
+              "referencedDeclaration": 96,
               "src": "134:10:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MyContract_$114",
+                "typeIdentifier": "t_contract$_MyContract_$96",
                 "typeString": "contract MyContract"
               }
             },
@@ -133,7 +133,7 @@
                       "referencedDeclaration": 5,
                       "src": "193:10:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MyContract_$114",
+                        "typeIdentifier": "t_contract$_MyContract_$96",
                         "typeString": "contract MyContract"
                       }
                     },
@@ -152,7 +152,7 @@
                         "nodeType": "NewExpression",
                         "src": "206:14:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_MyContract_$114_$",
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_MyContract_$96_$",
                           "typeString": "function () returns (contract MyContract)"
                         },
                         "typeName": {
@@ -160,10 +160,10 @@
                           "id": 9,
                           "name": "MyContract",
                           "nodeType": "UserDefinedTypeName",
-                          "referencedDeclaration": 114,
+                          "referencedDeclaration": 96,
                           "src": "210:10:0",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_contract$_MyContract_$114",
+                            "typeIdentifier": "t_contract$_MyContract_$96",
                             "typeString": "contract MyContract"
                           }
                         }
@@ -178,13 +178,13 @@
                       "nodeType": "FunctionCall",
                       "src": "206:16:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_MyContract_$114",
+                        "typeIdentifier": "t_contract$_MyContract_$96",
                         "typeString": "contract MyContract"
                       }
                     },
                     "src": "193:29:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_MyContract_$114",
+                      "typeIdentifier": "t_contract$_MyContract_$96",
                       "typeString": "contract MyContract"
                     }
                   },
@@ -251,7 +251,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 115,
+          "SourceUnit": 97,
           "absolutePath": "project:/contracts/MyContract.sol",
           "file": "./MyContract.sol",
           "scope": 17,
@@ -273,7 +273,7 @@
             null
           ],
           "contractDependencies": [
-            114
+            96
           ],
           "contractKind": "contract",
           "documentation": null,
@@ -301,7 +301,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "MyContract",
-                  "referencedDeclaration": 114,
+                  "referencedDeclaration": 96,
                   "type": "contract MyContract"
                 },
                 "id": 4,
@@ -414,7 +414,7 @@
                                     "attributes": {
                                       "contractScope": null,
                                       "name": "MyContract",
-                                      "referencedDeclaration": 114,
+                                      "referencedDeclaration": 96,
                                       "type": "contract MyContract"
                                     },
                                     "id": 9,
@@ -465,9 +465,17 @@
     "name": "solc",
     "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xc78B6619C934Cfa76c1BC49ebbC787A62Ba0C0D0",
+      "transactionHash": "0xa2f035251543d1b2fa581e5a114c3a3a96b56dbba10541bad640675b7fc7a527"
+    }
+  },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-17T03:28:58.463Z",
+  "updatedAt": "2023-02-17T03:48:51.449Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
