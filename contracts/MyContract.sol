@@ -3,7 +3,7 @@
 pragma solidity ^0.5.13;
 
 contract MyContract {
-  uint c;
+  uint public c;
   event Log1(address indexed addr);
   event Log2(address addr);
   event Log3(address addr, uint a, uint b, uint c);
