@@ -123,7 +123,7 @@
   "sourceMap": "59:470:0:-;;;210:85;8:9:-1;5:2;;;30:1;27;20:12;5:2;210:85:0;254:4;241:19;;;;;;;;;;;;271;284:4;271:19;;;;;;;;;;;;;;;;;;;;;;59:470;;;;;;",
   "deployedSourceMap": "59:470:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:470:0;;;;;;;;;;;;;;;;;;;;;;;;392:134;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;392:134:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;299:89;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;299:89:0;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;392:134;444:7;467:1;463;:5;459:1;:9;;;;479:28;492:4;499:1;502;505;;479:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;520:1;;513:8;;392:134;;;;:::o;299:89::-;356:7;382:1;378;:5;371:12;;299:89;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.5.13;\n\ncontract MyContract {\n  uint c;\n  event Log1(address indexed addr);\n  event Log2(address addr);\n  event Log3(address addr, uint a, uint b, uint c);\n\n  constructor() public{\n    emit Log1(address(this));\n    emit Log2(address(this));\n  }\n\n  function add1(uint256 a, uint256 b) public pure returns (uint256) {\n    return a + b;\n  }\n\n  function add2(uint256 a, uint256 b) public returns (uint256) {\n    c = a + b;\n    emit Log3(address(this), a, b, c);\n    return c;\n  }\n\n}\n",
-  "sourcePath": "/Users/linus/Desktop/ether-truffle/contracts/MyContract.sol",
+  "sourcePath": "/Users/jinrirencai/Desktop/node_learn/ethereum-in-depth/ethereum-in-depth/1-contract-creation/contracts/MyContract.sol",
   "ast": {
     "absolutePath": "project:/contracts/MyContract.sol",
     "exportedSymbols": {
@@ -2321,12 +2321,12 @@
         }
       },
       "links": {},
-      "address": "0xB4f2B3dde999600aDEeD0E3FBB0F3Bc220ABeb9D",
-      "transactionHash": "0xd9b064e631e1a298fac5a5a9ab873f2f7c6d3815c714a9a7d679caa7e475156e"
+      "address": "0x92292D35f2E88B8C9277394e50f81224861a8258",
+      "transactionHash": "0xf0c0bb9324695c96ea20f712d187b078ba0dc6afaa0202efb1ff8afb6894a3da"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2023-02-16T16:07:08.525Z",
+  "updatedAt": "2023-02-17T01:58:19.558Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
