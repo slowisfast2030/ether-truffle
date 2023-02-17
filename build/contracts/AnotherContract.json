@@ -1,0 +1,477 @@
+{
+  "contractName": "AnotherContract",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "myContract",
+      "outputs": [
+        {
+          "internalType": "contract MyContract",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"myContract\",\"outputs\":[{\"internalType\":\"contract MyContract\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/AnotherContract.sol\":\"AnotherContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/AnotherContract.sol\":{\"keccak256\":\"0x6aeca80a81243c3c86a8be372c654b25e95128fa7ac20c77f7c4cb5d927ac32d\",\"urls\":[\"bzz-raw://d9c03c76d117bf2f1cd5fbcb450a4cb35509a7b1012ffd6f208138ecc75211ec\",\"dweb:/ipfs/QmaGA8s87qjBTK51oSdkuWmhAXumG9zsv2xrmS4b24U4fE\"]},\"project:/contracts/MyContract.sol\":{\"keccak256\":\"0x27516b2f6f090418f6a861663c5fe38c81bc07eee79cad74a4dbcd9b78ae0aaa\",\"urls\":[\"bzz-raw://1edd90b0ba48a28db98034bc10916e398a60da371b4b2bb09c57b5ffd076857a\",\"dweb:/ipfs/QmNwibpbSv95EYvwQjkEvX6v4qbK4akvDDAPiE4g3283q8\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161001d9061007e565b604051809103906000f080158015610039573d6000803e3d6000fd5b506000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555061008b565b61029d8061016883390190565b60cf806100996000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063bc33657a14602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158206269823f354e3f1f49e5fe9981476fc685627d9863419dedf139c2839d81e89664736f6c63430005100032608060405234801561001057600080fd5b503073ffffffffffffffffffffffffffffffffffffffff167f0279db4e5aaeda2fda9c29d55593116d4c55c07250a419c180ca01181880fcd560405160405180910390a27f80cd1bb6a295a668df9c7f51c549f6c691f11a8bdc217d0e19592f36c50ddf4130604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390a16101d7806100c66000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c806329fcda331461004657806376b8144914610092578063c3da42b8146100de575b600080fd5b61007c6004803603604081101561005c57600080fd5b8101908080359060200190929190803590602001909291905050506100fc565b6040518082815260200191505060405180910390f35b6100c8600480360360408110156100a857600080fd5b81019080803590602001909291908035906020019092919050505061018f565b6040518082815260200191505060405180910390f35b6100e661019c565b6040518082815260200191505060405180910390f35b60008183016000819055507f5f47542b41f8d678dd8cdc3b68a226b1dafc0a979729b75725f5b7fa7b903cea308484600054604051808573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200184815260200183815260200182815260200194505050505060405180910390a1600054905092915050565b6000818301905092915050565b6000548156fea265627a7a723158205ee83bc7a96c559139a6786f2dbeaabf5e707c1f6e8273f98e20a77aac75935d64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063bc33657a14602d575b600080fd5b60336075565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a723158206269823f354e3f1f49e5fe9981476fc685627d9863419dedf139c2839d81e89664736f6c63430005100032",
+  "sourceMap": "105:124:0:-;;;166:61;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:61:0;206:16;;;;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;206:16:0;193:10;;:29;;;;;;;;;;;;;;;;;;105:124;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "105:124:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;105:124:0;;;;;;;;;;;;;;;;;;;134:28;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.5.11;\n\nimport {MyContract} from \"./MyContract.sol\";\n\ncontract AnotherContract {\n  MyContract public myContract;\n  constructor() public {\n    myContract = new MyContract();\n  }\n}",
+  "sourcePath": "/Users/jinrirencai/Desktop/node_learn/ethereum-in-depth/ethereum-in-depth/1-contract-creation/contracts/AnotherContract.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/AnotherContract.sol",
+    "exportedSymbols": {
+      "AnotherContract": [
+        16
+      ]
+    },
+    "id": 17,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".11"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:24:0"
+      },
+      {
+        "absolutePath": "project:/contracts/MyContract.sol",
+        "file": "./MyContract.sol",
+        "id": 3,
+        "nodeType": "ImportDirective",
+        "scope": 17,
+        "sourceUnit": 115,
+        "src": "59:44:0",
+        "symbolAliases": [
+          {
+            "foreign": 2,
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [
+          114
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 16,
+        "linearizedBaseContracts": [
+          16
+        ],
+        "name": "AnotherContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 5,
+            "name": "myContract",
+            "nodeType": "VariableDeclaration",
+            "scope": 16,
+            "src": "134:28:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_MyContract_$114",
+              "typeString": "contract MyContract"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 4,
+              "name": "MyContract",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 114,
+              "src": "134:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_MyContract_$114",
+                "typeString": "contract MyContract"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 14,
+              "nodeType": "Block",
+              "src": "187:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 8,
+                      "name": "myContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5,
+                      "src": "193:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MyContract_$114",
+                        "typeString": "contract MyContract"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 10,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "NewExpression",
+                        "src": "206:14:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_MyContract_$114_$",
+                          "typeString": "function () returns (contract MyContract)"
+                        },
+                        "typeName": {
+                          "contractScope": null,
+                          "id": 9,
+                          "name": "MyContract",
+                          "nodeType": "UserDefinedTypeName",
+                          "referencedDeclaration": 114,
+                          "src": "210:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_MyContract_$114",
+                            "typeString": "contract MyContract"
+                          }
+                        }
+                      },
+                      "id": 11,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "206:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_MyContract_$114",
+                        "typeString": "contract MyContract"
+                      }
+                    },
+                    "src": "193:29:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_MyContract_$114",
+                      "typeString": "contract MyContract"
+                    }
+                  },
+                  "id": 13,
+                  "nodeType": "ExpressionStatement",
+                  "src": "193:29:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 15,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 6,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "177:2:0"
+            },
+            "returnParameters": {
+              "id": 7,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "187:0:0"
+            },
+            "scope": 16,
+            "src": "166:61:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 17,
+        "src": "105:124:0"
+      }
+    ],
+    "src": "33:196:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/AnotherContract.sol",
+      "exportedSymbols": {
+        "AnotherContract": [
+          16
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".11"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "33:24:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 115,
+          "absolutePath": "project:/contracts/MyContract.sol",
+          "file": "./MyContract.sol",
+          "scope": 17,
+          "symbolAliases": [
+            {
+              "foreign": 2,
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 3,
+        "name": "ImportDirective",
+        "src": "59:44:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            114
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            16
+          ],
+          "name": "AnotherContract",
+          "scope": 17
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "myContract",
+              "scope": 16,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "contract MyContract",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "MyContract",
+                  "referencedDeclaration": 114,
+                  "type": "contract MyContract"
+                },
+                "id": 4,
+                "name": "UserDefinedTypeName",
+                "src": "134:10:0"
+              }
+            ],
+            "id": 5,
+            "name": "VariableDeclaration",
+            "src": "134:28:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 16,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 6,
+                "name": "ParameterList",
+                "src": "177:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 7,
+                "name": "ParameterList",
+                "src": "187:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "contract MyContract"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 5,
+                              "type": "contract MyContract",
+                              "value": "myContract"
+                            },
+                            "id": 8,
+                            "name": "Identifier",
+                            "src": "193:10:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "arguments": [
+                                null
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": false,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "contract MyContract",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    null
+                                  ],
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "function () returns (contract MyContract)"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "contractScope": null,
+                                      "name": "MyContract",
+                                      "referencedDeclaration": 114,
+                                      "type": "contract MyContract"
+                                    },
+                                    "id": 9,
+                                    "name": "UserDefinedTypeName",
+                                    "src": "210:10:0"
+                                  }
+                                ],
+                                "id": 10,
+                                "name": "NewExpression",
+                                "src": "206:14:0"
+                              }
+                            ],
+                            "id": 11,
+                            "name": "FunctionCall",
+                            "src": "206:16:0"
+                          }
+                        ],
+                        "id": 12,
+                        "name": "Assignment",
+                        "src": "193:29:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "ExpressionStatement",
+                    "src": "193:29:0"
+                  }
+                ],
+                "id": 14,
+                "name": "Block",
+                "src": "187:40:0"
+              }
+            ],
+            "id": 15,
+            "name": "FunctionDefinition",
+            "src": "166:61:0"
+          }
+        ],
+        "id": 16,
+        "name": "ContractDefinition",
+        "src": "105:124:0"
+      }
+    ],
+    "id": 17,
+    "name": "SourceUnit",
+    "src": "33:196:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2023-02-17T03:28:58.463Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
